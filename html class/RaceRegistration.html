@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+
+    <form action="">
+        <label for="first name">First name:</label>
+        <input type="text" id="first name" name="'firstname" required>
+
+        <label for="last name">Last name:</label>
+        <input type="text" id="last name" name="firstname" required>
+
+        <p>
+            Select a Race:
+            <br>
+            <!-- SAME TYPE, 
+                DIFFERENT IDS LINKED TO EACH BUTTON 
+                BUT SAME NAME SINCE THEYRE BUTTONS FOR THIS ANSWER
+                ADDING VALUE IS VERY IMPORTANT SINCE THIS WHAT WILL BE READ BY THE SERVER
+            -->
+            <input type="radio" id="funrun" name="race" value="funrun">
+            <label for="funrun">Fun Run 5k</label>
+
+            <br>
+            <input type="radio" id="half" name="race" value="half">
+            <label for="half">Half Marathon</label>
+
+            <br>
+            <input type="radio" id="full" name="race" value="full">
+            <label for="full">Full Marathon</label>
+
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <br>
+            <label for="age">Select Age Group:</label>
+            <select name="age" id="age">
+                <option value="under">under 18</option>
+                <option value="mid">18-30</option>
+                <option value="midmore">30-50</option>
+                <option value="old">50+</option>
+            </select>
+
+            <br>
+            <button>Submit</button>
+
+        </p>
+
+    </form>
+
+
+
+
+</body>
+
+</html>

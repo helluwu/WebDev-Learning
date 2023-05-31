@@ -1,0 +1,33 @@
+h1 {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+
+    width: 200px;
+    padding: 5px;
+
+    text-align: center;
+
+    background-color: #386641;
+
+    margin: 20px auto;
+
+}
+
+h1:nth-of-type(2n) {
+    background-color: #6a994e;
+}
+
+h1:nth-of-type(3n) {
+    background-color: #a7c957;
+    position: fixed;
+}
+
+h1:nth-of-type(4n) {
+    background-color: #f2e8cf;
+}
+
+section:nth-of-type(1) h1:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}

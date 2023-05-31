@@ -1,0 +1,58 @@
+* {
+    color: pink;
+}
+
+body {
+    background-color: beige;
+}
+
+
+button {
+    background-color: cadetblue;
+    font-size: 30px;
+}
+
+h1,
+h2 {
+    color: bisque;
+}
+
+#donotsubmit {
+    background-color: brown;
+    color: aliceblue;
+}
+
+.website {
+    color: orange;
+}
+
+ul li a {
+    color: red;
+}
+
+input[type="password"] {
+    color: darkgoldenrod;
+}
+
+button:hover {
+    color: black;
+}
+
+
+::selection {
+    background-color: greenyellow;
+}
+
+button::first-letter {
+    color: purple;
+}
+
+/*for specificity, the order is 
+
+important (will just overtake any specificity but not good to use) >
+inline styles (not recommended and not used much) >
+id selectors >
+class, attribute, pseudoclass selectors>
+element and pseudo element selectors
+
+*/

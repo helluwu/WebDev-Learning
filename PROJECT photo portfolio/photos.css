@@ -1,0 +1,17 @@
+img {
+    width: 30%;
+    margin: calc(10%/6);
+
+    /* 30 + 30 + 30 leaves us 10 % to divited by 6 
+    since each pic has a margin left and right*/
+}
+
+nav {
+    font-family: 'Raleway Dots', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f6bd60;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 20px 0;
+}

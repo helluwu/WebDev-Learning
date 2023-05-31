@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+
+    /*turn on flex on the container*/
+    display: flex;
+    /*decides on which axis and direction
+     we display items*/
+    flex-direction: row;
+    /*how we distribute items on items 
+    does not reverse the order*/
+    justify-content: center;
+    /*dictates dir of cross axis*/
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#container div {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    /*flex basis is the initial size that 
+    an element should be added into our flexbox
+    before additional space is distributed*/
+    flex-basis: 200px;
+    /*make it take as much space as possible
+    flex-grow: 1;*/
+
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+
+}
+
+div:nth-of-type(5) {
+    /*will grow 2x more than a flex grow of 1(relative)*/
+    flex-grow: 2;
+}
